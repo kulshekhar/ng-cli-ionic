@@ -2301,6 +2301,10 @@ ionic-angular@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.1.1.tgz#84a2765a5640713049a5dd9f454098987f5d52ae"
 
+ionicons@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-3.0.0.tgz#40b8daf4fd7a31150bd002160f66496e22a98c3c"
+
 ipaddr.js@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.3.0.tgz#1e03a52fdad83a8bbb2b25cbf4998b4cffcd3dec"
