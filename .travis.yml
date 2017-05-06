@@ -4,6 +4,9 @@ node_js:
   - "7"
   - "6"
 
+env:
+  - CHROME_BIN="/usr/bin/google-chrome-beta"
+
 sudo: required
 
 before_install:
