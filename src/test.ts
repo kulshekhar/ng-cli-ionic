@@ -12,16 +12,31 @@ import {
   platformBrowserDynamicTesting
 } from '@angular/platform-browser-dynamic/testing';
 
+import { IonicModule } from 'ionic-angular';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MdSelectModule, MdMenuModule, MdButtonModule, MdDialogModule, MdTabsModule, MdInputModule, MdAutocompleteModule, MdCardModule, MdListModule, MdGridListModule, MdProgressSpinnerModule, MdSlideToggleModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from "@angular/forms";
+import { RouterTestingModule } from "@angular/router/testing";
+
 // Unfortunately there's no typing for the `__karma__` variable. Just declare it as any.
 declare var __karma__: any;
 declare var require: any;
 
 // Prevent Karma from running prematurely.
-__karma__.loaded = function () {};
+__karma__.loaded = function () { };
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
-  BrowserDynamicTestingModule,
+  [
+    BrowserDynamicTestingModule,
+    RouterTestingModule,
+    FormsModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    MdSelectModule, MdMenuModule, MdButtonModule, MdDialogModule, MdTabsModule, MdInputModule, MdAutocompleteModule, MdCardModule, MdListModule, MdGridListModule, MdProgressSpinnerModule, MdSlideToggleModule,
+    IonicModule
+  ],
   platformBrowserDynamicTesting()
 );
 // Then we find all the tests.
