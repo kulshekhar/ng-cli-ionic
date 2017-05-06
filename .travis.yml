@@ -21,6 +21,9 @@ before_install:
   - which google-chrome-beta
   - ng --version
 
+install:
+  - echo 'dummy install to prevent yarn'
+
 script:
   - (yarn run build) &
   - "ng test --single-run --browsers Chrome_headless"
