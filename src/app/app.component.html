@@ -1,55 +1,66 @@
-<ion-menu [content]="content" *ngIf="media.isActive('lt-md')">
-  <ion-header>
-    <ion-toolbar color="dark">
-      <ion-title>Pages</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <div>
-    <ion-list>
-      <a ion-item menuToggle routerLink="/link1">Link 1</a>
-      <a ion-item menuToggle routerLink="/link2">Link 2</a>
-      <a ion-item menuToggle routerLink="/link3">Link 3</a>
-    </ion-list>
-  </div>
-</ion-menu>
-<div id="nav" #content></div>
+<div class="md">
 
-<ion-header>
-  <ion-navbar color="dark">
-    <ion-buttons left *ngIf="media.isActive('lt-md')">
-      <button ion-button clear icon-only menuToggle class="top-menu-link-mobile">
+  <ion-menu [content]="content" *ngIf="media.isActive('lt-md')">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Pages</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <div>
+      <ion-list>
+        <a ion-item menuToggle routerLink=".">Link 1</a>
+        <a ion-item menuToggle routerLink=".">Link 2</a>
+        <a ion-item menuToggle routerLink=".">Link 3</a>
+      </ion-list>
+    </div>
+  </ion-menu>
+  <div id="nav" #content></div>
+
+  <ion-header>
+    <ion-navbar color="dark">
+      <ion-buttons left *ngIf="media.isActive('lt-md')">
+        <button ion-button clear icon-only menuToggle class="top-menu-link-mobile">
         <ion-icon name='menu'></ion-icon>
       </button>
-    </ion-buttons>
+      </ion-buttons>
 
-    <ion-segment>
-      <ion-title>Angular CLI + Ionic</ion-title>
+      <ion-segment>
+        <ion-title>Angular CLI + Ionic</ion-title>
 
 
-      <a md-menu-item routerLink="/link1">Link 1</a>
-      <a md-menu-item routerLink="/link2">Link 2</a>
-      <a md-menu-item routerLink="/link3">Link 3</a>
-    </ion-segment>
+        <a md-menu-item routerLink=".">Link 1</a>
+        <a md-menu-item routerLink=".">Link 2</a>
+        <a md-menu-item routerLink=".">Link 3</a>
+      </ion-segment>
 
-    <ion-buttons end>
-      <button ion-button icon-only title="Menu" class="top-menu-link-mobile" [mdMenuTriggerFor]="menu">
+      <ion-buttons end>
+        <button ion-button icon-only title="Menu" class="top-menu-link-mobile" [mdMenuTriggerFor]="menu">
         <ion-icon name="more"></ion-icon>
       </button>
-      <md-menu #menu="mdMenu">
-        <a md-menu-item routerLink="/link1">Link 1</a>
-        <a md-menu-item routerLink="/link2">Link 2</a>
-        <a md-menu-item routerLink="/link3">Link 3</a>
-      </md-menu>
-    </ion-buttons>
+        <md-menu #menu="mdMenu">
+          <a md-menu-item routerLink=".">Link 1</a>
+          <a md-menu-item routerLink=".">Link 2</a>
+          <a md-menu-item routerLink=".">Link 3</a>
+        </md-menu>
+      </ion-buttons>
 
-  </ion-navbar>
-</ion-header>
+    </ion-navbar>
+  </ion-header>
 
-<div class="main-content">
-  <div>
-    <button color="primary" md-raised-button>button 1</button>
-    <button color="primary" md-button>button 2</button>
-    <button color="accent" md-raised-button>button 3</button>
+  <div class="main-content">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+      <button color="primary" md-raised-button>button 1</button>
+      <button color="primary" md-button>button 2</button>
+      <button color="accent" md-raised-button>button 3</button>
+      <button color="secondary" ion-button raised>ion button</button>
+    </div>
+    <ng-content></ng-content>
   </div>
-  <ng-content></ng-content>
+
 </div>
