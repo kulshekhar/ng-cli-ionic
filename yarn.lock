@@ -16,6 +16,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/cdk@2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-2.0.0-beta.8.tgz#71961c851dfbeb19e085e898bf5e4461408f8b57"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/cli@1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.3.1.tgz#2bc29fd709024dd397131b4cf1adc15026e6505f"
@@ -131,9 +137,11 @@
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-4.3.5.tgz#b6d882ea40d18d513fc3a035a79875029fe38f01"
 
-"@angular/material@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-2.0.0-beta.3.tgz#ec31dee61d7300ece28fee476852db236ded1e13"
+"@angular/material@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-2.0.0-beta.8.tgz#a92852abc9261aea26c2401f576645470be2cf38"
+  dependencies:
+    tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@^4.2.4":
   version "4.3.5"
@@ -171,11 +179,9 @@
     magic-string "^0.22.3"
     source-map "^0.5.6"
 
-"@types/dexie@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@types/dexie/-/dexie-1.3.1.tgz#accca262f9071f1ed963a40255fcf4bc7af67e15"
-  dependencies:
-    dexie "*"
+"@types/dexie@^1.3.32":
+  version "1.3.32"
+  resolved "https://registry.yarnpkg.com/@types/dexie/-/dexie-1.3.32.tgz#f01eb27c1bb7a2f8b3f77fa4f21f72d7c99cd4c0"
 
 "@types/jasmine@*", "@types/jasmine@2.5.53":
   version "2.5.53"
@@ -199,9 +205,9 @@
   version "8.0.24"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.24.tgz#06c580084d9add1fb40c1510ef0b448961246fb1"
 
-"@types/papaparse@^4.1.28":
-  version "4.1.28"
-  resolved "https://registry.yarnpkg.com/@types/papaparse/-/papaparse-4.1.28.tgz#f71a521f37e1046944fb152df7aa600849cea3ee"
+"@types/papaparse@^4.1.30":
+  version "4.1.30"
+  resolved "https://registry.yarnpkg.com/@types/papaparse/-/papaparse-4.1.30.tgz#00ea0f21ded31cecb5e0b21bd149361930e102b9"
 
 "@types/q@^0.0.32":
   version "0.0.32"
@@ -1475,7 +1481,7 @@ detect-indent@^4.0.0:
   dependencies:
     repeating "^2.0.0"
 
-dexie@*, dexie@^1.5.1:
+dexie@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/dexie/-/dexie-1.5.1.tgz#ac3ad5a0ebaf7e6e42760db58710418d4a756624"
 
@@ -2557,9 +2563,9 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ionic-angular@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.1.1.tgz#84a2765a5640713049a5dd9f454098987f5d52ae"
+ionic-angular@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.6.0.tgz#3c9222796c84cab37f5a3d090c268c9fe308e007"
 
 ionicons@^3.0.0:
   version "3.0.0"
@@ -3723,9 +3729,9 @@ pako@~0.2.0:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/pako/-/pako-0.2.9.tgz#f3f7522f4ef782348da8161bad9ecfd51bf83a75"
 
-papaparse@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-4.3.2.tgz#9aff2146e200ccb56cc0fb28df80092857f38efd"
+papaparse@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-4.3.5.tgz#b6cdf5cae6fe9ec603b1be66f114a63ac645a036"
 
 param-case@2.1.x:
   version "2.1.1"
@@ -3758,12 +3764,12 @@ parse-json@^2.2.0:
   dependencies:
     error-ex "^1.2.0"
 
-parse@^1.9.2:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/parse/-/parse-1.9.2.tgz#e41d7cb6efd464eea30c34ec0651548f66c5b8e4"
+parse@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/parse/-/parse-1.10.0.tgz#525e463aba20cb48228867bbe3a12bbf6d668560"
   dependencies:
     babel-runtime "^6.11.6"
-    ws "^1.0.1"
+    ws "^2.2.3"
     xmlhttprequest "^1.7.0"
 
 parsejson@0.0.3:
@@ -4575,7 +4581,7 @@ rxjs@^5.4.2:
   dependencies:
     symbol-observable "^1.0.1"
 
-safe-buffer@^5.0.1:
+safe-buffer@^5.0.1, safe-buffer@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
 
@@ -5327,6 +5333,10 @@ ultron@1.0.x:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
 
+ultron@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.0.tgz#b07a2e6a541a815fc6a34ccd4533baec307ca864"
+
 uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
@@ -5657,6 +5667,13 @@ ws@^1.0.1:
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"
+
+ws@^2.2.3:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-2.3.1.tgz#6b94b3e447cb6a363f785eaf94af6359e8e81c80"
+  dependencies:
+    safe-buffer "~5.0.1"
+    ultron "~1.1.0"
 
 wtf-8@1.0.0:
   version "1.0.0"
